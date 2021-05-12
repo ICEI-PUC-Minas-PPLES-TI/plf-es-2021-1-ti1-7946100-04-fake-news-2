@@ -1,0 +1,23 @@
+{
+  "name": "plf-es-2021-1-ti1-7946100-04-fake-news-2",
+  "version": "1.0.0",
+  "description": "Escreva um ou dois  parágrafo resumindo o objetivo do seu projeto.",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2021-1-ti1-7946100-04-fake-news-2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2021-1-ti1-7946100-04-fake-news-2/issues"
+  },
+  "homepage": "https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2021-1-ti1-7946100-04-fake-news-2#readme"
+}
