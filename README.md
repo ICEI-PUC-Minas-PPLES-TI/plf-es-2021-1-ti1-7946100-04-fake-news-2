@@ -1,10 +1,10 @@
-# Nome do projeto
+# Trust News
 
-Escreva um ou dois  parágrafo resumindo o objetivo do seu projeto.
+Esse projeto tem como objetivo principal diminuir a propagação de fake news através da criação de um portal de noticias confiavéis e bots que auxiliam nosso público alvo, idosos, a se informarem um pouco melhor.
 
 ## Alunos integrantes da equipe
 
-* Nome completo do aluno 1
+* Caio Eduardo Gomes Alves
 * Nome completo do aluno 2
 * Nome completo do aluno 3
 * Nome completo do aluno 4
