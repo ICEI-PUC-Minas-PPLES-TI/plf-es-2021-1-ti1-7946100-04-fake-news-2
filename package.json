@@ -4,11 +4,13 @@
   "description": "Escreva um ou dois  parágrafo resumindo o objetivo do seu projeto.",
   "main": "index.js",
   "dependencies": {
+    "dotenv": "^9.0.2",
     "express": "^4.17.1"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./Codigo/index.js"
   },
   "repository": {
     "type": "git",
