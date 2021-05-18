@@ -1,6 +1,2 @@
-FROM node:12-alpine
-WORKDIR /home/node/app
-COPY ./package.json ./
-RUN npm install
-COPY ./Codigo/* ./
-CMD node index.js
+FROM nginx:1.19
+COPY ./Codigo/*/* /usr/share/nginx/html/
