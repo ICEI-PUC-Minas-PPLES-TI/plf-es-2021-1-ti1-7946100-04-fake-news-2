@@ -8,7 +8,8 @@ main {
 }
 
 .header .logo h1{
-  font-family: "Times New Roman"
+  font-family: "Times New Roman";
+  margin-top: 7px;
 }
 
 .header .menu_area .menu{
