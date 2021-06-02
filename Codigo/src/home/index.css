@@ -1,0 +1,39 @@
+main {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.header{
+  border: 1px solid #000;
+}
+
+.header .logo h1{
+  font-family: "Times New Roman";
+  margin-top: 7px;
+}
+
+.header .menu_area .menu{
+  margin-top: 7px;
+  border: 1px solid #000;
+}
+
+
+.main {
+  border: 1px solid #000;
+}
+
+.footer {
+  border: 1px solid #000;
+}
+
+.menu_lateral_esq{
+  border: 1px solid #000;
+}
+
+.central {
+  border: 1px solid #000;
+}
+
+.menu_lateral_dir {
+  border: 1px solid #000;
+}
