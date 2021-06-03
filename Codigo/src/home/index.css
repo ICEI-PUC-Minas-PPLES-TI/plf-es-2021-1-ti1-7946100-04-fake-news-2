@@ -3,26 +3,7 @@ main {
   margin-bottom: 5px;
 }
 
-.header{
-  border: 1px solid #000;
-}
-
-.header .logo h1{
-  font-family: "Times New Roman";
-  margin-top: 7px;
-}
-
-.header .menu_area .menu{
-  margin-top: 7px;
-  border: 1px solid #000;
-}
-
-
 .main {
-  border: 1px solid #000;
-}
-
-.footer {
   border: 1px solid #000;
 }
 
