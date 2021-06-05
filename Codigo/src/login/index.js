@@ -39,8 +39,8 @@ function cadastrarUsuario(user) {
 }
 
 $(function() {
-  $('#header').load('../util/header.html');
-  $('#footer').load('../util/footer.html');
+  $('#header').load('http://trustnewsfront.brazilsouth.azurecontainer.io/util/header.html');
+  $('#footer').load('http://trustnewsfront.brazilsouth.azurecontainer.io/util/footer.html');
 });
 
 window.onload = () => {
@@ -81,7 +81,7 @@ window.onload = () => {
       localStorage.setItem('loggedId', usuario.id);
       document.getElementById('login-menu').hidden = true;
       document.getElementById('logout-menu').hidden = false;
-      window.location.href = "../home/index.html";
+      window.location.href = "http://trustnewsfront.brazilsouth.azurecontainer.io/home/";
     }else {
       alert("Usuario ou senha invalido");
     }
