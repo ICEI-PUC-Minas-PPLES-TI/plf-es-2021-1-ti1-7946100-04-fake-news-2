@@ -12,12 +12,12 @@ function loadNews() {
     let central = document.querySelector('.central');  
     Object.keys(noticias).forEach( function(key, value) {
       let noticia = document.createElement('div');
+      let imagem = document.createElement('div');
       let thumbnail = document.createElement('img');
       let corpo = document.createElement('div');
       let tituloNoticia = document.createElement('h4');
       let textoNoticia = document.createElement('p');
       
-      thumbnail.classList.add('col-4');
       thumbnail.src = noticias[key].urlToImage;;
       thumbnail.addEventListener("click", () => {
         window.open(
@@ -25,15 +25,17 @@ function loadNews() {
           '_blank'
         ); 
       })
+      imagem.classList.add('col-12', 'col-sm-12', 'col-md-12', 'col-lg-4');
+      imagem.appendChild(thumbnail);
 
-      corpo.classList.add('col-7', 'corpo');
+      corpo.classList.add('col-12', 'col-sm-12', 'col-md-12', 'col-lg-7','corpo');
       tituloNoticia.innerHTML = noticias[key].title;
       textoNoticia.innerHTML = noticias[key].content;
       corpo.appendChild(tituloNoticia);
       corpo.appendChild(textoNoticia);
 
       noticia.classList.add('noticia', 'row');
-      noticia.appendChild(thumbnail);
+      noticia.appendChild(imagem);
       noticia.appendChild(corpo);
 
       central.appendChild(noticia);
