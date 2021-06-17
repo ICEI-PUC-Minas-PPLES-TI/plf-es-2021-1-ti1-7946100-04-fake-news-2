@@ -39,8 +39,8 @@ function cadastrarUsuario(user) {
 }
 
 $(function() {
-  $('#header').load('http://trustnewsfront.brazilsouth.azurecontainer.io/util/header.html');
-  $('#footer').load('http://trustnewsfront.brazilsouth.azurecontainer.io/util/footer.html');
+  $('#header').load('../util/header.html');
+  $('#footer').load('../util/footer.html');
 });
 
 window.onload = () => {
