@@ -8,7 +8,6 @@ function loadNews() {
   
   callApiNews().then(data => {
     const noticias = data.articles;
-    const d = new Date();
     let central = document.querySelector('.central');  
     Object.keys(noticias).forEach( function(key, value) {
       let noticia = document.createElement('div');
