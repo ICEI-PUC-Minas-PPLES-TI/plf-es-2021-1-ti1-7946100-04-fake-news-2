@@ -1,5 +1,6 @@
 async function callApiNews() {
-  let response = await fetch("https://newsapi.org/v2/top-headlines?sources=google-news-br&apiKey=2a7a0f9d7ba642fb86f6ca8438f56cb0");
+  //let response = await fetch("https://newsapi.org/v2/top-headlines?sources=google-news-br&apiKey=2a7a0f9d7ba642fb86f6ca8438f56cb0");
+  let response = await fetch("../news.json");
   let data = await response.json();
   return data;
 }
