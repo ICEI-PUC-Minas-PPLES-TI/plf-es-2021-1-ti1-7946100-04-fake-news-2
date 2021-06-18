@@ -8,7 +8,7 @@ function loadNews() {
   
   callApiNews().then(data => {
     const noticias = data.articles;
-  
+    const d = new Date();
     let central = document.querySelector('.central');  
     Object.keys(noticias).forEach( function(key, value) {
       let noticia = document.createElement('div');
@@ -17,6 +17,7 @@ function loadNews() {
       let corpo = document.createElement('div');
       let tituloNoticia = document.createElement('h4');
       let textoNoticia = document.createElement('p');
+      let data = document.createElement('p');
       
       thumbnail.src = noticias[key].urlToImage;;
       thumbnail.addEventListener("click", () => {
@@ -31,12 +32,17 @@ function loadNews() {
       corpo.classList.add('col-12', 'col-sm-12', 'col-md-12', 'col-lg-7','corpo');
       tituloNoticia.innerHTML = noticias[key].title;
       textoNoticia.innerHTML = noticias[key].content;
+      data.innerHTML = new Date(noticias[key].publishedAt).toUTCString();
       corpo.appendChild(tituloNoticia);
       corpo.appendChild(textoNoticia);
+      corpo.appendChild(data);
+
+      
 
       noticia.classList.add('noticia', 'row');
       noticia.appendChild(imagem);
       noticia.appendChild(corpo);
+      noticia.appendChild(data);
 
       central.appendChild(noticia);
       central.appendChild(document.createElement("HR"));
