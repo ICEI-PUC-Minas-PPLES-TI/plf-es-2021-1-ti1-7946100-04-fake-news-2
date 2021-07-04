@@ -1,0 +1,174 @@
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+
+}
+.search .label{
+    margin: auto;
+    padding-right: 10px;
+  }
+
+
+.searchBar {
+  width: 90%;
+  border: 3px solid #8190A5;
+  padding: 5px;
+  height: 30px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+  display: block;
+  margin: 0 auto;
+}
+
+.searchBar:focus{
+  color: #8190A5;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #8190A5;
+  background: #8190A5;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.container{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+
+
+  background-color: #FFFFFF;
+  border: 2px solid #8492A6;
+  width: 612px;
+}
+
+.btn_container{
+    display: flex;
+    padding-top: 15px;
+}
+
+.registerButton{
+    width: 150px;
+    border-radius: 5px;
+    height: 35px;
+    vertical-align: middle;
+    display: table-cell;
+}
+.button_a{
+    text-decoration: none;
+    color: white;
+}
+
+.index #list_table{
+    width: 100%;
+    margin: 15px 0 0 0;
+}
+.menu_lateral_dir{
+    height: 100%;;
+}
+
+.menu_lateral_esq{
+    height: 100%;
+}
+
+/* ---------------  Cadastro ---------------------- */
+
+.register_body .container{
+    flex-direction: column;
+    
+}
+
+.register_body #texto,
+.register_body #motivo{
+    height: 300px;
+}
+
+.register_body .button_a {
+    margin: 20px 0 0 0;
+}
+
+.register_body .search{
+    display: inline;
+}
+.register_body .search div{
+    padding:10px 0;
+}
+
+.register_body .label{
+    display: flex;
+}
+.backButton{
+    padding:0px !important; 
+    margin-left: auto;
+}
+.backButton_a{
+    margin-left: auto !important;
+}
+
+#list_table{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+th{
+    border: 3px solid #8190A5;
+}
+td{
+    border: 3px solid #8190A5;
+}
+tr{
+    border: 3px solid #8190A5;
+}
+i{
+    cursor: pointer;
+}
+
+.title_report{
+    text-align: center;
+    margin: 20px 0 50px 0;
+    font-size: 28px;
+}
+
+.form_info{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.left_div{
+    width: 20%;
+    margin: 0;
+}
+
+.right_div{
+    width: 20%;
+    margin: 0;
+}
+
+.middle_div{
+    width: 80%;
+    margin: 0 10px;
+}
+.inner_left{
+    margin: 30px 10px;
+}
+.inner_left>div{
+    margin-bottom: 30px;
+}
+.inner_left_title{
+    font-size: 16px;
+    text-align: center;
+}
+
+.gray_color{
+    color: #8190A5;
+}

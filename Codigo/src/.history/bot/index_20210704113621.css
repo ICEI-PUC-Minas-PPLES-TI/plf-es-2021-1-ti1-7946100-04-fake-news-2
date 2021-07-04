@@ -1,0 +1,7 @@
+.bot_fields{
+  display: flex;
+}
+
+.bot_fields > div{
+  width: 50%;
+}

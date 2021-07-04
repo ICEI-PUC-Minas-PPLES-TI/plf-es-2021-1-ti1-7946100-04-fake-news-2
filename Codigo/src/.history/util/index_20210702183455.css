@@ -1,0 +1,42 @@
+@charset "UTF-8";
+body {
+  background-image: url("https://static8.depositphotos.com/1391774/933/i/950/depositphotos_9334068-stock-photo-ripped-newspapers.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.header .logo{
+  text-align: center;
+  font-family: 'Berkshire Swash', 'Times New Roman';
+  font-size: 50px;
+  text-shadow: 2px 2px #808080;
+  color: #FFF;
+  background-color: #101010;
+  border-radius: 5px 5px 0px 0px;
+  padding-top: 15px;
+  margin-top: 10px;
+}
+
+.header .menu_area {
+  background-color: #101010;
+  border-radius: 0px 0px 5px 5px;
+  padding-left: 200px;
+}
+
+.header .menu_area a {
+  color: #FFF;
+  font-size: 25px;
+  margin-left: 2px;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+
+.header .menu_area a:hover {
+  color: #000;
+  background-color: #808080;
+  margin-left: 2px;
+}
+
+.footer {
+}

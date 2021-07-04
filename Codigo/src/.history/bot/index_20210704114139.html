@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>    
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="../reportar/style.css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+        <script src="../reportar/backend.js"></script> 
+
+        <link rel="stylesheet" href="../home/index.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="../home/index.js"></script> 
+
+        <link rel="stylesheet" href="../bot/index.css">
+        <script src="../bot/index.js"></script> 
+    </head>
+
+    <body class="register_body"  onload="javascript:check_logged()">
+
+    <header id="header">
+    </header>
+
+        <div class="register_body container col-6">
+            <div style="margin: 0 20px">
+
+                <div class="title_report">
+                    Bot de Notícias
+                </div>
+                <div class="subtitle_report">
+                    Descrição detalhada de como será o bot de notícias.<br>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt congue ligula in rutrum. Morbi nec lacus condimentum, hendrerit mi eu, feugiat.
+                </div>
+            </div>
+            <div class="search">
+                <form method="post" id="bot">
+                    <div class="form_info">Cadastro:</div>
+
+                    <div>
+                        <div class="bot_fields">
+                            <div>
+                                <input id="nome_bot" type="text" class="searchBar" placeholder="Seu nome:">
+                            </div>
+                            <div>
+                                <input id="telefone_bot" type="text" class="searchBar" placeholder="Telefone c/ DDD:">
+                            </div>
+                        </div>
+                        <div>
+                            <div style="text-align: center;">Categorias</div>
+                            <div class="bot_categorias">
+                                <div>
+                                    <input type="checkbox" id="isFake" name="isFake">
+                                    <label for="Categoria1" class="inner_left_title">Categoria 1</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="isFake" name="isFake">
+                                    <label for="Categoria2" class="inner_left_title">Categoria 2</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="isFake" name="isFake">
+                                    <label for="Categoria3" class="inner_left_title">Categoria 3</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="isFake" name="isFake">
+                                    <label for="Categoria4" class="inner_left_title">Categoria 4</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; margin: 0 20px;" id="form_not_adm">
+                            <input type="button" class="button_a searchButton registerButton backButton_a" value="Reportar" onclick="save_cadastro_bot()">
+                        </div>
+                    </div>
+                
+                </form>
+            </div>
+        </div>
+
+    </body>
+</html>
