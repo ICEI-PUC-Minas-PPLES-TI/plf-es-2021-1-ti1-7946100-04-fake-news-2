@@ -1,14 +1,10 @@
 function getUsuario(email) {
-  if(localStorage.length != 0){
-    for(let i=0; i<localStorage.length; i++){
-      let id = localStorage.key(i);
-      let user = JSON.parse(localStorage.getItem(id));
-        
-      if(user.email == email){
-        return {
-          id,
-          user
-        };
+  users = JSON.parse(localStorage.getItem("users"));
+  
+  if(users != null){
+    for (var i = 0; i < users.length; i++){
+      if (users[i].email == email){
+        return users[i];
       }
     }
   }
@@ -35,7 +31,17 @@ function validarCampos(user, confirmarsenha) {
 }
 
 function cadastrarUsuario(user) {
-  localStorage.setItem(Math.random().toString().substr(2,5), JSON.stringify(user));
+  var all_users = [];
+  all_users = JSON.parse(localStorage.getItem("users"));
+  
+  all_users.push(user);
+  localStorage.setItem("users", JSON.stringify(all_users));
+  alert("Usuario cadastrado");
+      document.getElementById("nome").value = "";
+      document.getElementById("telefone").value = "";
+      document.getElementById("Email").value = "";
+      document.getElementById("senha").value = "";
+      document.getElementById("confirmarsenha").value = "";
 }
 
 $(function() {
@@ -46,6 +52,7 @@ $(function() {
 window.onload = () => {
   signup.onsubmit = (evento) => {
     let user = {
+        id: Math.random().toString().substr(2,5),
         nome: nome.value,
         senha: senha.value,
         email: Email.value,
@@ -54,6 +61,7 @@ window.onload = () => {
     let response = {
       message: ""
     };
+    
     if(getUsuario(user.email) != false)
       alert("Usuário já cadastrado");
     else {
@@ -69,22 +77,27 @@ window.onload = () => {
   };
 
   signin.onsubmit = (evento) => {
+    
     let user = {
       email: email.value,
       senha: password.value
     };
-
+    
     let usuario = getUsuario(user.email);
-    console.log(usuario);
+    
+    
 
-    if(usuario != false && user.senha == usuario.user.senha){
+    if(usuario != false && user.senha == usuario.senha){
       localStorage.setItem('loggedId', usuario.id);
-      document.getElementById('login-menu').hidden = true;
-      document.getElementById('logout-menu').hidden = false;
-      window.location.href = "http://trustnewsfront.brazilsouth.azurecontainer.io/home/";
+      //document.getElementById('login-menu').hidden = true;
+      //document.getElementById('logout-menu').hidden = false;
+      //window.location.href = "http://trustnewsfront.brazilsouth.azurecontainer.io/home/";
+      window.location.href = "http://127.0.0.1:5500/Codigo/src/home/index.html";
     }else {
       alert("Usuario ou senha invalido");
     }
     evento.preventDefault();
   };
 }
+
+

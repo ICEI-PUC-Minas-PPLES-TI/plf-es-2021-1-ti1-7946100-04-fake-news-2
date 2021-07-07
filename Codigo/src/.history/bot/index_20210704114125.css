@@ -1,0 +1,16 @@
+.bot_fields{
+  display: flex;
+}
+
+.bot_fields > div{
+  width: 50%;
+}
+
+.bot_categorias{
+  display: flex;
+  flex-wrap: wrap;
+}
+.bot_categorias > div{
+  width: 50%;
+  text-align: center;
+}
