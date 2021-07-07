@@ -54,7 +54,7 @@ function pencil(key){
 }
 
 function edit(){
-    console.log("edit")
+    
     let key = localStorage.getItem("to_edit");
     let to_edit = JSON.parse(localStorage.getItem("noticias"))[key];
 
@@ -83,7 +83,7 @@ function save() {
     let motivo = "";//document.getElementById("motivo").checked;
     let thumb = $(".imagearea")[0].firstChild.attributes.src.value;
     let revisado = true;
-    console.log(this.thumb_to_save);
+    
 
     var values_json = {
         'link': link,
@@ -116,7 +116,7 @@ function save_report() {
     let motivo = document.getElementById("motivo").value;
     let thumb = $(".imagearea")[0].firstChild.attributes.src.value;
     let revisado = false;
-    console.log(this.thumb_to_save);
+    
 
     var values_json = {
         'link': link,
@@ -165,8 +165,8 @@ function saveOnEdit(){
     }
     content[key] = values_json;
     content = to_edit;
-    console.log(to_edit);
-    console.log(content[key]);
+    
+    
     localStorage.setItem("noticias", JSON.stringify(content));
     let tam = localStorage.length-1;
     localStorage.setItem("length",tam);
@@ -213,7 +213,7 @@ $(document).ready(function(){
     img.src = localStorage.theImage;
   
     $('.imagearea').html(img);
-    console.log("alow");
+    
     $("body").on("change",".classhere",function(){
         
         var fileInput = $(this)[0];
@@ -239,7 +239,7 @@ $(document).ready(function(){
         let noticias = JSON.parse(localStorage.getItem("noticias"));
     //for(var i = 0; i <= localStorage.length; i++){
         for(var i = 0; i < noticias.length; i++){
-            console.log(noticias);
+            
             
             var storage = JSON.parse(localStorage.getItem("noticias"))[i];
             if(storage.revisado || localStorage.getItem('loggedId') != null){

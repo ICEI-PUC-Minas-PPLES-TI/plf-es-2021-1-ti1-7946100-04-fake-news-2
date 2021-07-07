@@ -103,7 +103,7 @@
         </div>
         <script>
             if(localStorage.getItem('loggedId') == null || localStorage.getItem('loggedId') == "null"){
-                console.log("not logged");
+                
                 document.getElementById("form_adm").style.display = "none";
                 document.getElementById("form_not_adm").style.display = "none";
             }else{
@@ -121,11 +121,11 @@
             }
        /*
             if(localStorage.getItem('loggedId') != null || localStorage.getItem('loggedId') != "null"){
-                console.log("logged");
+                
                 document.getElementById("form_adm").style.display = "block";
                 document.getElementById("form_not_adm").style.display = "none";
             }else{
-                console.log(" not logged");
+                
                 document.getElementById("form_adm").style.display = "none";
                 document.getElementById("form_not_adm").style.display = "block";
     
@@ -133,11 +133,11 @@
     
            
             if(localStorage.getItem("to_edit") != null){
-                console.log("not edit");
+                
                 document.getElementById("save_without_edit").style.display = "flex";
                 document.getElementById("save_with_edit").style.display = "none";
             }else{
-                console.log("edit");
+                ;
                 document.getElementById("save_without_edit").style.display = "none";
                 document.getElementById("save_with_edit").style.display = "flex";
     

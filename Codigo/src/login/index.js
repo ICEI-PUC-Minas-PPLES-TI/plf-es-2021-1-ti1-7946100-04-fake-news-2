@@ -1,4 +1,3 @@
-var all_users = [];
 function getUsuario(email) {
   users = JSON.parse(localStorage.getItem("users"));
   
@@ -32,7 +31,10 @@ function validarCampos(user, confirmarsenha) {
 }
 
 function cadastrarUsuario(user) {
-  this.all_users.push(user);
+  var all_users = [];
+  all_users = JSON.parse(localStorage.getItem("users"));
+  
+  all_users.push(user);
   localStorage.setItem("users", JSON.stringify(all_users));
   alert("Usuario cadastrado");
       document.getElementById("nome").value = "";
@@ -59,7 +61,7 @@ window.onload = () => {
     let response = {
       message: ""
     };
-    console.log("5");
+    
     if(getUsuario(user.email) != false)
       alert("Usuário já cadastrado");
     else {
@@ -75,22 +77,22 @@ window.onload = () => {
   };
 
   signin.onsubmit = (evento) => {
-    console.log("1");
+    
     let user = {
       email: email.value,
       senha: password.value
     };
-    console.log("2");
+    
     let usuario = getUsuario(user.email);
-    console.log("3");
-    console.log(usuario);
+    
+    
 
     if(usuario != false && user.senha == usuario.senha){
       localStorage.setItem('loggedId', usuario.id);
       //document.getElementById('login-menu').hidden = true;
       //document.getElementById('logout-menu').hidden = false;
       //window.location.href = "http://trustnewsfront.brazilsouth.azurecontainer.io/home/";
-      window.location.href = "http://localhost/src/home/index.html";
+      window.location.href = "http://127.0.0.1:5500/Codigo/src/home/index.html";
     }else {
       alert("Usuario ou senha invalido");
     }

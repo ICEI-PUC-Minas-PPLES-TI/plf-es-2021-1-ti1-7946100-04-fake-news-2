@@ -1,5 +1,5 @@
 function getUsuario(email) {
-  console.log("4");
+  
   if(localStorage.getItem("loggedId") != null){
     for(let i=0; i<localStorage.length; i++){
       let id = localStorage.key(i);
@@ -61,7 +61,7 @@ window.onload = () => {
     let response = {
       message: ""
     };
-    console.log("5");
+    
     if(getUsuario(user.email) != false)
       alert("Usuário já cadastrado");
     else {
@@ -77,15 +77,15 @@ window.onload = () => {
   };
 
   signin.onsubmit = (evento) => {
-    console.log("1");
+    
     let user = {
       email: email.value,
       senha: password.value
     };
-    console.log("2");
+    
     let usuario = getUsuario(user.email);
-    console.log("3");
-    console.log(usuario);
+    
+    
 
     if(usuario != false && user.senha == usuario.user.senha){
       localStorage.setItem('loggedId', usuario.id);

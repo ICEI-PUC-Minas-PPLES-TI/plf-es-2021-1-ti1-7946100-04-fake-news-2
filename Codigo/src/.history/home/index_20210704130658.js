@@ -15,7 +15,7 @@ window.onload = () => {
 //    document.getElementById('logout-menu').hidden = true;
 //    localStorage.removeItem('loggedId');
 //  });
-  console.log("check");
+  
   if(localStorage.getItem('loggedId') != "null"){
     document.getElementById('login-menu').hidden = true;
     document.getElementById('logout-menu').hidden = false;
@@ -23,6 +23,6 @@ window.onload = () => {
 }
 
 function loadContent(filePath){
-  console.log(filePath);
+  
   $('#main').load(filePath);
 }

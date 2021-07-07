@@ -79,13 +79,13 @@ window.onload = () => {
       email: email.value,
       senha: password.value
     };
-    console.log("ENTROU AQUI -1")
+    
     let usuario = getUsuario(user.email);
-    console.log(usuario);
-    console.log("ENTROU AQUI 0")
+    
+    
     if(usuario != false && user.senha == usuario.user.senha){
       localStorage.setItem('loggedId', usuario.id);
-      console.log("ENTROU AQUI");
+      ;
       document.getElementById('login-menu').hidden = true;
       document.getElementById('logout-menu').hidden = false;
       //window.location.href = "http://trustnewsfront.brazilsouth.azurecontainer.io/home/";

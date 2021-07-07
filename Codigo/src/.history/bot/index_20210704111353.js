@@ -53,7 +53,7 @@ window.onload = () => {
     };
 
     let usuario = getUsuario(user.email);
-    console.log(usuario);
+    
 
     if(usuario != false && user.senha == usuario.user.senha){
       localStorage.setItem('loggedId', usuario.id);

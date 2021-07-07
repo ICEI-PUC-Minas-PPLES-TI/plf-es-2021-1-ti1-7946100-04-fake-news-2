@@ -18,6 +18,6 @@ $(function() {
 //}
 
 function loadContent(filePath){
-  console.log(filePath);
+  
   $('#main').load(filePath);
 }

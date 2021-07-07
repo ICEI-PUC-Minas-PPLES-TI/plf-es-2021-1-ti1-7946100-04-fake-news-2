@@ -81,7 +81,7 @@ window.onload = () => {
     };
 
     let usuario = getUsuario(user.email);
-    console.log(usuario);
+    
 
     if(usuario != false && user.senha == usuario.user.senha){
       localStorage.setItem('loggedId', usuario.id);
@@ -101,7 +101,7 @@ function logOut(){
 }
 
 function check_is_logged(){
-  console.log("check")
+  
   if(localStorage.getItem('loggedId') != "null"){
     document.getElementById('login-menu').hidden = true;
     document.getElementById('logout-menu').hidden = false;
