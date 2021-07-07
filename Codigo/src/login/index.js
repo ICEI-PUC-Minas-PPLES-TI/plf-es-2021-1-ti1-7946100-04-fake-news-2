@@ -92,7 +92,7 @@ window.onload = () => {
       //document.getElementById('login-menu').hidden = true;
       //document.getElementById('logout-menu').hidden = false;
       //window.location.href = "http://trustnewsfront.brazilsouth.azurecontainer.io/home/";
-      window.location.href = "http://127.0.0.1:5500/Codigo/src/home/index.html";
+      window.location.href = "https://icei-puc-minas-pples-ti.github.io/plf-es-2021-1-ti1-7946100-04-fake-news-2/Codigo/src/home/index.html";
     }else {
       alert("Usuario ou senha invalido");
     }
