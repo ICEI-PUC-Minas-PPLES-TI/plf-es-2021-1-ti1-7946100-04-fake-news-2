@@ -32,8 +32,10 @@ function validarCampos(user, confirmarsenha) {
 
 function cadastrarUsuario(user) {
   var all_users = [];
-  all_users = JSON.parse(localStorage.getItem("users"));
-  
+
+  if(localStorage.getItem("users") !== null) 
+    all_users = JSON.parse(localStorage.getItem("users"));
+
   all_users.push(user);
   localStorage.setItem("users", JSON.stringify(all_users));
   alert("Usuario cadastrado");
