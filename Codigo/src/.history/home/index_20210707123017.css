@@ -1,7 +1,12 @@
-
+main {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
 
 .main {
   border: 1px solid #000;
+}
+.main > div{
   max-width: 1135px !important;
   margin: 0 auto !important;
 }

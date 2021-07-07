@@ -26,10 +26,7 @@ main {
   text-align: center;
   padding-bottom: 20px;
 }
-#btn-signin, #btn-signup{
-  background-color: #8492A6;
-  color: white;
-}
+
 .sign form input{
   margin-top: 20px;
   background-color: #FFFFFF;

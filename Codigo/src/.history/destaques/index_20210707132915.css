@@ -1,4 +1,8 @@
 
+main {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
 .main {
   border: 1px solid #000;

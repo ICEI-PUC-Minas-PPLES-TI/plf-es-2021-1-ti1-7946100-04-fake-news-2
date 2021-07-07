@@ -1,9 +1,12 @@
-
+main {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
 
 .main {
   border: 1px solid #000;
-  max-width: 1135px !important;
-  margin: 0 auto !important;
+  max-width: 1111px;
+  margin: 0 auto;
 }
 
 .menu_lateral_esq{

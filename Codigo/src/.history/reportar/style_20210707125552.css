@@ -21,9 +21,6 @@
   display: block;
   margin: 0 auto;
 }
-.rounded_corners{
-    border-radius: 5px;
-}
 
 .searchBar:focus{
   color: #8190A5;
@@ -100,9 +97,6 @@
 
 .register_body .search{
     display: flex;
-}
-.search.search_form{
-    display: inline;
 }
 .register_body .search div{
     padding:10px 0;
