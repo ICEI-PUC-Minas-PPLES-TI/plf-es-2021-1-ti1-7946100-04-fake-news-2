@@ -20,14 +20,17 @@
       <i class="fa fa-bars"></i>
       <i class="fa fa-times-circle"></i>
     </label>-->
-      <nav class="nav menu col-12">
-        <a class="nav-link" href="../home/index.html">Inicio</a>
-        <a class="nav-link" href="../destaques/index.html">Destaques</a>
-        <a class="nav-link" href="../bot/index.html">Bot Noticias</a>
-        <a class="nav-link" href="../reportar/list_fn.html">Fake News</a>
-        <a class="nav-link" href="../reportar/reportar_fn.html">Reportar Fake News</a>
-        <a id="login-menu" class="nav-link" href="../login/index.html">Login</a>
-        <a id="logout-menu" class="nav-link"href="#" onclick="logOut();" hidden>Logout</a>
+      <nav id="nav" class="nav menu col-12">
+        <button id="btn-mobile">Menu</button>
+        <ul id="menuMobile">
+          <li><a class="nav-link" href="../home/index.html">Inicio</a></li>
+          <li><a class="nav-link" href="../destaques/index.html">Destaques</a></li>
+          <li><a class="nav-link" href="../bot/index.html">Bot Noticias</a></li>
+          <li><a class="nav-link" href="../reportar/list_fn.html">Fake News</a></li>
+          <li><a class="nav-link" href="../reportar/reportar_fn.html">Reportar Fake News</a></li>
+          <li><a id="login-menu" class="nav-link" href="../login/index.html">Login</a></li>
+          <li><a id="logout-menu" class="nav-link"href="#" onclick="logOut();" hidden>Logout</a></li>
+        </ul>
       </nav>
     </div>
   </div>
@@ -47,4 +50,6 @@
     document.getElementById('logout-menu').hidden = true;
   }
 </script>
+
+<script src="util.js"></script>
 </body>

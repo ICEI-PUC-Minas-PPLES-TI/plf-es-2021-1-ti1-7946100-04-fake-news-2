@@ -42,5 +42,32 @@ body {
   margin-left: 2px;
 }
 
-.footer {
+#btn-mobile{
+  display: none;
+}
+
+ul{
+  display: flex;
+}
+
+ul li{
+  list-style: none;
+}
+
+@media (max-width:770px){
+  #btn-mobile{
+    display: block;
+    border: 1px solid white;
+    background-color: #000;
+    color: #FFF;
+    
+  }
+
+  #menuMobile{
+    display: none;
+  }
+  #nav.active #menuMobile{
+    display: block;
+  }
+
 }
