@@ -1,0 +1,35 @@
+cff-version: 1.0.1
+message: Please cite this software using these metadata.
+title: Trust News
+authors:
+  - family-names: Gomes Alves
+    given-names: Caio Eduardo 
+  - family-names: 
+    given-names: 
+  - family-names: 
+    given-names: 
+  - family-names: 
+    given-names: 
+  - family-names: 
+    given-names: 
+  - family-names: 
+    given-names: 
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: 
+    given-names: 
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: 
+    given-names: 
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: 
+    given-names: 
+keywords:
+  - Notícias
+  - Veracidade
+repository-code: https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2021-1-ti1-7946100-04-fake-news-2 
+license: CC-BY-4.0
+version: 1.0.0
+date-released: 2021-06-20
